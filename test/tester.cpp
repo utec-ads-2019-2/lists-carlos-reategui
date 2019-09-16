@@ -4,7 +4,7 @@ void Tester::execute() {
     Collection collections[] = { forward_list, linked_list, circular_list };
     size_t numberOfCollections = sizeof(collections) / sizeof(collections[0]);
 
-    for (int i = 0; i < numberOfCollections; i++) {
+    for (int i = 0; i < 3; i++) {
         for (int j = 0; j < NUMBER_OF_TESTS; ++j) {
             testList<int>(collections[i]);
             testList<char>(collections[i]);

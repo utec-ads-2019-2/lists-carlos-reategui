@@ -30,6 +30,7 @@ class List {
             return this->nodes;
         }
         void clear() {
+            // Esto no va funcionar para la lista circular
             this->head->killSelf();
             this->head = nullptr;
             this->tail = nullptr;
